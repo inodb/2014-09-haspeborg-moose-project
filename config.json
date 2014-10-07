@@ -1,0 +1,12 @@
+{
+    "concoct_assemblies": {
+        "101B": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies/101B/metassemble/assemblies/ray/noscaf/newbler/ma-merge.fa",
+        "102": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/102/newbler/454AllContigs.fna",
+        "103": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies/103/metassemble/assemblies/ray/noscaf/newbler/ma-merge.fa",
+        "104": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies/104/metassemble/assemblies/ray/noscaf/newbler/ma-merge.fa",
+        "105": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/105/newbler/454AllContigs.fna",
+        "106": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/106/newbler/454AllContigs.fna"
+    },
+    "concoct_load_env": "source activate concoct_env",
+    "concoct_scripts": "/glob/inod/github/concoct-inodb/scripts"
+}
