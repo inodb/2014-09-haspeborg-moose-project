@@ -27,14 +27,13 @@ source deactivate
 
 # Clustering metagenomic assemblies with CONCOCT
 The idea is to cluster metagenomic assemblies of six related samples that we
-have into bins using (CONCOCT)[https://github.com/BinPro/CONCOCT]. For this we
-follow the (complete
-example)[https://concoct.readthedocs.org/en/latest/complete_example.html].
+have into bins using [CONCOCT](https://github.com/BinPro/CONCOCT). For this we
+follow the [complete example](https://concoct.readthedocs.org/en/latest/complete_example.html).
 
 ## Cutting up contigs
 The assemblies have already been done, so they have been put in the
 [config.json](config.json) file. All the rules to do the analysis are in the
-[Snakefile](Snakefile]. Start by cutting up the contigs into chunks of 10K:
+[Snakefile](Snakefile). Start by cutting up the contigs into chunks of 10K:
 
 ```shell
 snakemake --cores 6 -p all_cutup_10K
