@@ -1,0 +1,24 @@
+{
+    "sbatch_general": {
+        "account": "b2014227",
+        "wrapper_script": "/glob/inod/bin/sbatch_job"
+    },
+    "schedule_default": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 5,
+        "partition": "core",
+        "cores": "1",
+        "extra_parameters": "--qos=short"
+    },
+    "schedule_all": "schedule_default",
+    "schedule_all_cutup_10K": "schedule_default",
+    "schedule_cutup": {
+        "days": 0,
+        "hours": 0,
+        "minutes": 5,
+        "partition": "core",
+        "cores": "1",
+        "extra_parameters": "--qos=short"
+    }
+}

@@ -7,6 +7,8 @@ include: CONCOCT_COMMIT + "common/rules/track_dir.rules"
 
 configfile: "config.json"
 
+localrules: all_cutup_10K
+
 rule all_cutup_10K:
     input:
         expand("concoct/{assembly}/cutup/contigs_10K.fasta", assembly=config["concoct_assemblies"])
