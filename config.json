@@ -1,12 +1,61 @@
 {
-    "concoct_assemblies": {
-        "101B": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies/101B/metassemble/assemblies/ray/noscaf/newbler/ma-merge.fa",
-        "102": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/102/newbler/454AllContigs.fna",
-        "103": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies/103/metassemble/assemblies/ray/noscaf/newbler/ma-merge.fa",
-        "104": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies/104/metassemble/assemblies/ray/noscaf/newbler/ma-merge.fa",
-        "105": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/105/newbler/454AllContigs.fna",
-        "106": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/106/newbler/454AllContigs.fna"
+    "concoct_rules": {
+        "assemblies": {
+            "101B": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies/101B/metassemble/assemblies/ray/noscaf/newbler/ma-merge.fa",
+            "102": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/102/newbler/454AllContigs.fna",
+            "103": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies/103/metassemble/assemblies/ray/noscaf/newbler/ma-merge.fa",
+            "104": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies/104/metassemble/assemblies/ray/noscaf/newbler/ma-merge.fa",
+            "105": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/105/newbler/454AllContigs.fna",
+            "106": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/106/newbler/454AllContigs.fna"
+        },
+        "load_env": "source activate concoct_env",
+        "scripts": "/glob/inod/github/concoct-inodb/scripts"
     },
-    "concoct_load_env": "source activate concoct_env",
-    "concoct_scripts": "/glob/inod/github/concoct-inodb/scripts"
+    "bowtie2_rules": {
+        "platform": "Illumina",
+        "mapping_params": {
+            "default": "",
+            "very-fast": "--very-fast"
+        },
+        "samples": {
+            "101B": ["101B", "101B_test100", "101B_test1K"],
+            "102": ["102_3", "102_5"],
+            "103": ["103"],
+            "104": ["104"],
+            "105": ["105"],
+            "106": ["106"]
+        },
+        "units": {
+            "101B_test100":
+                ["/glob/inod/test/moose/101B_test100_1.fastq",
+                 "/glob/inod/test/moose/101B_test100_2.fastq"],
+            "101B_test1K":
+                ["/glob/inod/test/moose/101B_test_1.fastq",
+                 "/glob/inod/test/moose/101B_test_2.fastq"],
+            "101B":
+                ["/proj/b2010008/INBOX/A.Andersson_12_01/P272_101B_index1/121017_AD1E87ACXX/5_121017_AD1E87ACXX_P272_101B_index1_1.fastq",
+                 "/proj/b2010008/INBOX/A.Andersson_12_01/P272_101B_index1/121017_AD1E87ACXX/5_121017_AD1E87ACXX_P272_101B_index1_2.fastq"],
+            "102_3":
+                ["/proj/b2010008/INBOX/A.Andersson_12_01/P272_102_index7/120921_BC16HYACXX/3_120921_BC16HYACXX_P272_102_index7_1.fastq",
+                 "/proj/b2010008/INBOX/A.Andersson_12_01/P272_102_index7/120921_BC16HYACXX/3_120921_BC16HYACXX_P272_102_index7_2.fastq"],
+            "102_5":
+                ["/proj/b2010008/INBOX/A.Andersson_12_01/P272_102_index7/121030_BD1FJ4ACXX_not/5_121030_BD1FJ4ACXX_P272_102_index7_1.fastq",
+                 "/proj/b2010008/INBOX/A.Andersson_12_01/P272_102_index7/121030_BD1FJ4ACXX_not/5_121030_BD1FJ4ACXX_P272_102_index7_2.fastq"],
+            "103":
+                ["/proj/b2010008/INBOX/A.Andersson_12_01/P272_103_index8/120921_BC16HYACXX/5_120921_BC16HYACXX_P272_103_index8_1.fastq",
+                 "/proj/b2010008/INBOX/A.Andersson_12_01/P272_103_index8/120921_BC16HYACXX/5_120921_BC16HYACXX_P272_103_index8_2.fastq"],
+            "104":
+                ["/proj/b2010008/INBOX/A.Andersson_12_01/P272_104_index9/120921_BC16HYACXX/6_120921_BC16HYACXX_P272_104_index9_1.fastq",
+                 "/proj/b2010008/INBOX/A.Andersson_12_01/P272_104_index9/120921_BC16HYACXX/6_120921_BC16HYACXX_P272_104_index9_2.fastq"],
+            "105":
+                ["/proj/b2010008/INBOX/A.Andersson_12_01/P272_105_index10/120921_BC16HYACXX/6_120921_BC16HYACXX_P272_105_index10_1.fastq",
+                 "/proj/b2010008/INBOX/A.Andersson_12_01/P272_105_index10/120921_BC16HYACXX/6_120921_BC16HYACXX_P272_105_index10_2.fastq"],
+            "106":
+                ["/proj/b2010008/INBOX/A.Andersson_12_01/P272_106_index11/120921_BC16HYACXX/5_120921_BC16HYACXX_P272_106_index11_1.fastq",
+                 "/proj/b2010008/INBOX/A.Andersson_12_01/P272_106_index11/120921_BC16HYACXX/5_120921_BC16HYACXX_P272_106_index11_2.fastq"]
+        }
+    },
+    "samtools_rules": {
+        "picard_jars": "/glob/inod/src/picard-tools-1.119/"
+    }
 }

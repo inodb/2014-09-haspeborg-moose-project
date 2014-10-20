@@ -1,0 +1,26 @@
+{
+    "concoct_rules": {
+        "assemblies": {
+            "101B_test": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies/101B/metassemble/assemblies/ray/noscaf/newbler/ma-merge.fa"
+        },
+        "load_env": "source activate concoct_env",
+        "scripts": "/glob/inod/github/concoct-inodb/scripts"
+    },
+    "bowtie2_rules": {
+        "platform": "Illumina",
+        "mapping_params": {
+            "very-fast": "--very-fast"
+        },
+        "samples": {
+            "101B": ["101B_test100"]
+        },
+        "units": {
+            "101B_test100":
+                ["/glob/inod/test/moose/101B_test100_1.fastq",
+                 "/glob/inod/test/moose/101B_test100_2.fastq"]
+        }
+    },
+    "samtools_rules": {
+        "picard_jars": "/glob/inod/src/picard-tools-1.119/"
+    }
+}
