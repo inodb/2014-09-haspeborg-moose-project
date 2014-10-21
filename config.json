@@ -9,7 +9,7 @@
             "106": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/106/newbler/454AllContigs.fna"
         },
         "load_env": "source activate concoct_env",
-        "scripts": "/glob/inod/github/concoct-inodb/scripts"
+        "scripts_dir": "/glob/inod/github/concoct-inodb/scripts"
     },
     "bowtie2_rules": {
         "platform": "Illumina",
@@ -18,7 +18,7 @@
             "very-fast": "--very-fast"
         },
         "samples": {
-            "101B": ["101B", "101B_test100", "101B_test1K"],
+            "101B": ["101B"],
             "102": ["102_3", "102_5"],
             "103": ["103"],
             "104": ["104"],
@@ -26,12 +26,6 @@
             "106": ["106"]
         },
         "units": {
-            "101B_test100":
-                ["/glob/inod/test/moose/101B_test100_1.fastq",
-                 "/glob/inod/test/moose/101B_test100_2.fastq"],
-            "101B_test1K":
-                ["/glob/inod/test/moose/101B_test_1.fastq",
-                 "/glob/inod/test/moose/101B_test_2.fastq"],
             "101B":
                 ["/proj/b2010008/INBOX/A.Andersson_12_01/P272_101B_index1/121017_AD1E87ACXX/5_121017_AD1E87ACXX_P272_101B_index1_1.fastq",
                  "/proj/b2010008/INBOX/A.Andersson_12_01/P272_101B_index1/121017_AD1E87ACXX/5_121017_AD1E87ACXX_P272_101B_index1_2.fastq"],
