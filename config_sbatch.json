@@ -9,7 +9,7 @@
         "minutes": 5,
         "partition": "core",
         "cores": "1",
-        "extra_parameters": "--qos=short"
+        "extra_parameters": ""
     },
     "schedule_short": {
         "days": 0,
@@ -17,7 +17,7 @@
         "minutes": 15,
         "partition": "core",
         "cores": "1",
-        "extra_parameters": "--qos=short"
+        "extra_parameters": ""
     },
     "schedule_all": "schedule_default",
     "schedule_all_cutup_10K": "schedule_default",
@@ -28,7 +28,7 @@
         "minutes": 5,
         "partition": "core",
         "cores": "1",
-        "extra_parameters": "--qos=short"
+        "extra_parameters": ""
     },
     "schedule_bowtie2_index": {
         "days": 0,
@@ -39,8 +39,8 @@
         "extra_parameters": ""
     },
     "schedule_bowtie2_map": {
-        "days": 0,
-        "hours": 6,
+        "days": 1,
+        "hours": 0,
         "minutes": 0,
         "partition": "core",
         "cores": "4",
@@ -54,9 +54,16 @@
         "cores": "1",
         "extra_parameters": ""
     },
+    "schedule_bam_sort": {
+        "days": 0,
+        "hours": 6,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "1",
+        "extra_parameters": ""
+    },
+    "schedule_bam_sort_name": "schedule_bam_sort",
     "schedule_bam_index": "schedule_short",
-    "schedule_bam_sort": "schedule_short",
-    "schedule_bam_sort_name": "schedule_short",
     "schedule_sam_to_bam": "schedule_short",
     "schedule_bam_stats": "schedule_short",
     "schedule_fasta_dict": "schedule_short",

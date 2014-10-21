@@ -6,8 +6,7 @@ configfile: "config.json"
 # add 10K cutup as references for bowtie2 to map against
 config["bowtie2_rules"]["references"] = {a + "_10K": "concoct/{a}/cutup/contigs_10K.fasta".format(a=a) for a in config["concoct_rules"]["assemblies"]}
 
-#CONCOCT_COMMIT="https://raw.githubusercontent.com/inodb/snakemake-workflows/98f9ee1c49efe16d0fde0dc62040fe6e347b0fce/"
-CONCOCT_COMMIT = "/glob/inod/github/snakemake-workflows/"
+CONCOCT_COMMIT="https://raw.githubusercontent.com/inodb/snakemake-workflows/e7db69de4906017afb55a8994668d4d24c18c6c3/"
 include: CONCOCT_COMMIT + "bio/ngs/rules/binning/concoct.rules"
 include: CONCOCT_COMMIT + "common/rules/track_dir.rules"
 include: CONCOCT_COMMIT + "bio/ngs/rules/mapping/bowtie2.rules"
