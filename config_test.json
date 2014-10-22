@@ -4,6 +4,8 @@
             "101B_test": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies/101B/metassemble/assemblies/ray/noscaf/newbler/ma-merge.fa"
         },
         "load_env": "source activate concoct_env",
+        "mapper": "bowtie2",
+        "mapping_params": "very-fast",
         "scripts_dir": "/glob/inod/github/concoct-inodb/scripts"
     },
     "bowtie2_rules": {

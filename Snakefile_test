@@ -1,0 +1,18 @@
+__author__ = "inodb http://ino.pm"
+__license__ = "MIT"
+
+configfile: "config_test.json"
+
+# Use local snakemake-worflows folder for testing
+CONCOCT_COMMIT = "/glob/inod/github/snakemake-workflows/"
+include: CONCOCT_COMMIT + "bio/ngs/rules/binning/concoct.rules"
+include: CONCOCT_COMMIT + "common/rules/track_dir.rules"
+include: CONCOCT_COMMIT + "bio/ngs/rules/mapping/bowtie2.rules"
+include: CONCOCT_COMMIT + "bio/ngs/rules/mapping/samtools.rules"
+
+localrules: track_changes
+
+
+rule track_changes:
+    input:
+        "concoct_track.txt", "mapping_track.txt"

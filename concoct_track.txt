@@ -1,5 +1,8 @@
 -rw-rw-r-- 1 inod b2014227 391983277 Oct 17 17:59 concoct/101B/cutup/contigs_10K.fasta
 -rw-rw-r-- 1 inod b2014227       467 Oct 17 17:59 concoct/101B/cutup/contigs_10K.fasta-slurm.out
+-rw-rw-r-- 1 inod b2014227 391983277 Oct 21 01:01 concoct/101B_test/cutup/contigs_10K.fasta
+-rw-rw-r-- 1 inod b2014227       467 Oct 21 01:01 concoct/101B_test/cutup/contigs_10K.fasta-slurm.out
+-rw-rw-r-- 1 inod b2014227  13965526 Oct 22 16:24 concoct/101B_test/input/concoct_inputtable.tsv
 -rw-rw-r-- 1 inod b2014227  69426856 Oct 17 17:58 concoct/102/cutup/contigs_10K.fasta
 -rw-rw-r-- 1 inod b2014227       467 Oct 17 17:58 concoct/102/cutup/contigs_10K.fasta-slurm.out
 -rw-rw-r-- 1 inod b2014227 343561625 Oct 17 17:57 concoct/103/cutup/contigs_10K.fasta

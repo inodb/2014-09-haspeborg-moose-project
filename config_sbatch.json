@@ -22,7 +22,8 @@
     "schedule_all": "schedule_default",
     "schedule_all_cutup_10K": "schedule_default",
     "schedule_all_map_10K": "schedule_default",
-    "schedule_cutup": {
+    "schedule_all_concoct_inputtable_10K": "schedule_default",
+    "schedule_cutup_10K": {
         "days": 0,
         "hours": 0,
         "minutes": 5,
@@ -30,6 +31,7 @@
         "cores": "1",
         "extra_parameters": ""
     },
+    "schedule_generate_coverage_table_10K": "schedule_bedtools_coverage",
     "schedule_bowtie2_index": {
         "days": 0,
         "hours": 2,
@@ -44,6 +46,14 @@
         "minutes": 0,
         "partition": "core",
         "cores": "4",
+        "extra_parameters": ""
+    },
+    "schedule_remove_mark_duplicates": {
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "6",
         "extra_parameters": ""
     },
     "schedule_bedtools_coverage": {
@@ -69,6 +79,5 @@
     "schedule_fasta_dict": "schedule_short",
     "schedule_fasta_index": "schedule_short",
     "schedule_bam_measure_insert_size": "schedule_bowtie2_map",
-    "schedule_remove_mark_duplicates": "schedule_bowtie2_map",
     "schedule_sample_merge": "schedule_bowtie2_map"
 }
