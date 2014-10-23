@@ -9,6 +9,8 @@
             "106": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/106/newbler/454AllContigs.fna"
         },
         "load_env": "source activate concoct_env",
+        "mapper": "bowtie2",
+        "mapping_params": "very-fast",
         "scripts_dir": "/glob/inod/github/concoct-inodb/scripts"
     },
     "bowtie2_rules": {
