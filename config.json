@@ -11,6 +11,11 @@
         "load_env": "source activate concoct_env",
         "mapper": "bowtie2",
         "mapping_params": "very-fast",
+        "concoct_params": {
+            "cutoff-1000-maxcluster-400": "-c 400 -l 1000",
+            "cutoff-2000-maxcluster-400": "-c 400 -l 2000",
+            "cutoff-3000-maxcluster-400": "-c 400 -l 3000"
+        },
         "scripts_dir": "/glob/inod/github/concoct-inodb/scripts"
     },
     "bowtie2_rules": {
@@ -49,9 +54,11 @@
             "106":
                 ["/proj/b2010008/INBOX/A.Andersson_12_01/P272_106_index11/120921_BC16HYACXX/5_120921_BC16HYACXX_P272_106_index11_1.fastq",
                  "/proj/b2010008/INBOX/A.Andersson_12_01/P272_106_index11/120921_BC16HYACXX/5_120921_BC16HYACXX_P272_106_index11_2.fastq"]
-        }
+        },
+        "load_env": "module load bioinfo-tools bowtie2/2.2.3"
     },
     "samtools_rules": {
-        "picard_jars": "/glob/inod/src/picard-tools-1.119/"
+        "picard_jars": "/glob/inod/src/picard-tools-1.119/",
+        "load_env": "module load bioinfo-tools samtools/0.1.19 BEDTools/2.21.0"
     }
 }

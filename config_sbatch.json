@@ -20,10 +20,10 @@
         "extra_parameters": ""
     },
     "schedule_all": "schedule_default",
-    "schedule_all_cutup_10K": "schedule_default",
-    "schedule_all_map_10K": "schedule_default",
-    "schedule_all_concoct_inputtable_10K": "schedule_default",
-    "schedule_cutup_10K": {
+    "schedule_concoct_cutup_10K_all": "schedule_default",
+    "schedule_concoct_map_10K_all": "schedule_default",
+    "schedule_concoct_inputtable_10K_all": "schedule_default",
+    "schedule_concoct_cutup_10K": {
         "days": 0,
         "hours": 0,
         "minutes": 5,
@@ -31,7 +31,16 @@
         "cores": "1",
         "extra_parameters": ""
     },
-    "schedule_generate_coverage_table_10K": "schedule_bedtools_coverage",
+    "schedule_concoct_generate_coverage_table_10K": "schedule_bedtools_coverage",
+    "schedule_concoct_run_10K": {
+        "days": 1,
+        "hours": 0,
+        "minutes": 0,
+        "partition": "core",
+        "cores": "5",
+        "extra_parameters": ""
+    },
+    "schedule_concoct_run_10K_all": "schedule_default",
     "schedule_bowtie2_index": {
         "days": 0,
         "hours": 2,
