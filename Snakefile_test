@@ -9,6 +9,7 @@ include: CONCOCT_COMMIT + "bio/ngs/rules/binning/concoct.rules"
 include: CONCOCT_COMMIT + "common/rules/track_dir.rules"
 include: CONCOCT_COMMIT + "bio/ngs/rules/mapping/bowtie2.rules"
 include: CONCOCT_COMMIT + "bio/ngs/rules/mapping/samtools.rules"
+include: CONCOCT_COMMIT + "bio/ngs/rules/annotation/prodigal.rules"
 
 localrules: track_changes
 
