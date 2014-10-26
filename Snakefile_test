@@ -10,6 +10,7 @@ include: CONCOCT_COMMIT + "common/rules/track_dir.rules"
 include: CONCOCT_COMMIT + "bio/ngs/rules/mapping/bowtie2.rules"
 include: CONCOCT_COMMIT + "bio/ngs/rules/mapping/samtools.rules"
 include: CONCOCT_COMMIT + "bio/ngs/rules/annotation/prodigal.rules"
+include: CONCOCT_COMMIT + "bio/ngs/rules/blast/rpsblast.rules"
 
 localrules: track_changes
 

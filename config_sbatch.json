@@ -1,6 +1,6 @@
 {
     "sbatch_general": {
-        "account": "b2014227",
+        "account": "b2013127",
         "wrapper_script": "/glob/inod/bin/sbatch_job"
     },
     "schedule_default": {
@@ -81,6 +81,17 @@
         "cores": "1",
         "extra_parameters": ""
     },
+    "schedule_rpsblast_run": {
+        "days": 3,
+        "hours": 0,
+        "minutes": 0,
+        "partition": "node",
+        "cores": "48",
+        "extra_parameters": ""
+    },
+    "schedule_rpsblast_run_all": "schedule_default",
+    "schedule_prodigal_run": "schedule_bedtools_coverage",
+    "schedule_prodigal_run_all": "schedule_default",
     "schedule_bam_sort_name": "schedule_bam_sort",
     "schedule_bam_index": "schedule_short",
     "schedule_sam_to_bam": "schedule_short",
