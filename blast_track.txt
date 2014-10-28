@@ -1,0 +1,14 @@
+-rw-rw-r-- 1 inod inod 19848165 Oct 27 03:42 blast/rpsblast/default-concoct/cog/101B_10K/rpsblast.out
+-rw-rw-r-- 1 inod inod   174818 Oct 27 03:42 blast/rpsblast/default-concoct/cog/101B_10K/rpsblast.out-slurm.out
+-rw-rw-r-- 1 inod inod  1196936 Oct 26 18:09 blast/rpsblast/default-concoct/cog/101B_test_10K/rpsblast.out
+-rw-rw-r-- 1 inod inod     1110 Oct 26 18:09 blast/rpsblast/default-concoct/cog/101B_test_10K/rpsblast.out-slurm.out
+-rw-rw-r-- 1 inod inod  2507389 Oct 26 15:37 blast/rpsblast/default-concoct/cog/102_10K/rpsblast.out
+-rw-rw-r-- 1 inod inod     5034 Oct 26 15:37 blast/rpsblast/default-concoct/cog/102_10K/rpsblast.out-slurm.out
+-rw-rw-r-- 1 inod inod 19778080 Oct 27 08:48 blast/rpsblast/default-concoct/cog/103_10K/rpsblast.out
+-rw-rw-r-- 1 inod inod   140660 Oct 27 08:48 blast/rpsblast/default-concoct/cog/103_10K/rpsblast.out-slurm.out
+-rw-rw-r-- 1 inod inod 31951977 Oct 27 06:27 blast/rpsblast/default-concoct/cog/104_10K/rpsblast.out
+-rw-rw-r-- 1 inod inod   152886 Oct 27 06:27 blast/rpsblast/default-concoct/cog/104_10K/rpsblast.out-slurm.out
+-rw-rw-r-- 1 inod inod  7687060 Oct 27 00:59 blast/rpsblast/default-concoct/cog/105_10K/rpsblast.out
+-rw-rw-r-- 1 inod inod    10230 Oct 27 00:59 blast/rpsblast/default-concoct/cog/105_10K/rpsblast.out-slurm.out
+-rw-rw-r-- 1 inod inod  7257362 Oct 26 16:42 blast/rpsblast/default-concoct/cog/106_10K/rpsblast.out
+-rw-rw-r-- 1 inod inod     9284 Oct 26 16:42 blast/rpsblast/default-concoct/cog/106_10K/rpsblast.out-slurm.out

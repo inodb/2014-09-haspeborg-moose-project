@@ -82,11 +82,11 @@
         "extra_parameters": ""
     },
     "schedule_rpsblast_run": {
-        "days": 3,
-        "hours": 0,
+        "days": 0,
+        "hours": 12,
         "minutes": 0,
         "partition": "node",
-        "cores": "48",
+        "cores": "32",
         "extra_parameters": ""
     },
     "schedule_rpsblast_run_all": "schedule_default",
@@ -99,5 +99,8 @@
     "schedule_fasta_dict": "schedule_short",
     "schedule_fasta_index": "schedule_short",
     "schedule_bam_measure_insert_size": "schedule_bowtie2_map",
-    "schedule_sample_merge": "schedule_bowtie2_map"
+    "schedule_sample_merge": "schedule_bowtie2_map",
+    "schedule_concoct_eval_cog_table": "schedule_bedtools_coverage",
+    "schedule_concoct_eval_cog_plot": "schedule_short",
+    "schedule_concoct_eval_cog_plot_all": "schedule_short"
 }
