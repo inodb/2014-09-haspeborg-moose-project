@@ -4,7 +4,7 @@ __license__ = "MIT"
 configfile: "config.json"
 
 
-CONCOCT_COMMIT="https://raw.githubusercontent.com/inodb/snakemake-workflows/8494d27366395ce29b89efde23b14c7f1e0e1000/"
+CONCOCT_COMMIT="https://raw.githubusercontent.com/inodb/snakemake-workflows/90d883a4b110dfa640c58d9312628c731b59f318/"
 include: CONCOCT_COMMIT + "bio/ngs/rules/binning/concoct.rules"
 include: CONCOCT_COMMIT + "common/rules/track_dir.rules"
 include: CONCOCT_COMMIT + "bio/ngs/rules/mapping/bowtie2.rules"
@@ -17,4 +17,4 @@ localrules: track_changes
 
 rule track_changes:
     input:
-        "concoct_track.txt", "mapping_track.txt"
+        "concoct_track.txt", "mapping_track.txt", "annotation_track.txt", "blast_track.txt"

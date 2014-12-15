@@ -8,7 +8,7 @@
             "105": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/105/newbler/454AllContigs.fna",
             "106": "/proj/b2010008/nobackup/projects/moose/metassemble/sep-assemblies-lindgren/106/newbler/454AllContigs.fna"
         },
-        "load_env": "source activate concoct_env",
+        "load_env": "source activate concoct_env && module load bioinfo-tools MUMmer/3.23",
         "mapper": "bowtie2",
         "mapping_params": "very-fast",
         "concoct_params": {
@@ -16,7 +16,7 @@
             "cutoff-2000-maxcluster-400": "-c 400 -l 2000",
             "cutoff-3000-maxcluster-400": "-c 400 -l 3000"
         },
-        "scripts_dir": "/glob/inod/github/concoct-inodb/scripts"
+        "scripts_dir": "/glob/inod/github/CONCOCT-extract-scg-bins/scripts"
     },
     "bowtie2_rules": {
         "platform": "Illumina",

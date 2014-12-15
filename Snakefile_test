@@ -1,7 +1,7 @@
 __author__ = "inodb http://ino.pm"
 __license__ = "MIT"
 
-configfile: "config_test.json"
+configfile: "config.json"
 
 # Use local snakemake-worflows folder for testing
 CONCOCT_COMMIT = "/glob/inod/github/snakemake-workflows/"
@@ -18,3 +18,17 @@ localrules: track_changes
 rule track_changes:
     input:
         "concoct_track.txt", "mapping_track.txt"
+
+rule report:
+    input:
+        "report/concoct/index.html"
+    output:
+        "report/index.html"
+    shell:
+        """
+        (
+            echo '<html><head><style>body {{ text-align: center }}</style></head><body>'
+            echo "<a href='concoct/index.html'>CONCOCT Results</a><br />"
+            echo '</body></html>'
+        ) > {output}
+        """
