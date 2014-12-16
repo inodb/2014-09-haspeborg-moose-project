@@ -1,7 +1,12 @@
 __author__ = "inodb http://ino.pm"
 __license__ = "MIT"
 
-configfile: "config.json"
+configfile: "config_test.json"
+
+# add all reads to check fastqc
+import os
+
+config["fastqc_rules"]["reads"] = {os.path.basename(p):p for p in [v for t in config["bowtie2_rules"]["units"].values() for v in t]}
 
 # Use local snakemake-worflows folder for testing
 CONCOCT_COMMIT = "/glob/inod/github/snakemake-workflows/"
@@ -11,23 +16,20 @@ include: CONCOCT_COMMIT + "bio/ngs/rules/mapping/bowtie2.rules"
 include: CONCOCT_COMMIT + "bio/ngs/rules/mapping/samtools.rules"
 include: CONCOCT_COMMIT + "bio/ngs/rules/annotation/prodigal.rules"
 include: CONCOCT_COMMIT + "bio/ngs/rules/blast/rpsblast.rules"
+include: CONCOCT_COMMIT + "bio/ngs/rules/quality_control/fastqc.rules"
 
-localrules: track_changes
-
-
-rule track_changes:
-    input:
-        "concoct_track.txt", "mapping_track.txt"
 
 rule report:
     input:
-        "report/concoct/index.html"
+        "report/fastqc/index.html",
+        "report/concoct/index.html",
     output:
         "report/index.html"
     shell:
         """
         (
             echo '<html><head><style>body {{ text-align: center }}</style></head><body>'
+            echo "<a href='fastqc/index.html'>FastQC Results</a><br />"
             echo "<a href='concoct/index.html'>CONCOCT Results</a><br />"
             echo '</body></html>'
         ) > {output}

@@ -76,5 +76,8 @@
             "cog": "/proj/b2010008/nobackup/database/cog_le/Cog"
         },
         "parallel_params": "--env PATH --slf <(scontrol show hostnames $SLURM_NODELIST)"
+    },
+    "fastqc_rules": {
+        "load_env": "module load bioinfo-tools FastQC/0.11.1"
     }
 }
